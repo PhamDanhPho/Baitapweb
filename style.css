@@ -394,6 +394,7 @@ img {
   font-size: 24px;
   color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  line-height: 50px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
 }
 
 .carousel-control-prev-icon::before {
@@ -415,6 +416,7 @@ img {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  line-height: 50px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
 }
 
 .cute-btn:hover {
