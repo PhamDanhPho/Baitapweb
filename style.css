@@ -392,6 +392,7 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  line-height: 1;
   color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-sizing: border-box; /* Đảm bảo tính toán đúng kích thước */
@@ -399,12 +400,12 @@ img {
 
 .carousel-control-prev-icon::before {
   content: "←";
-  line-height: normal; /* Bỏ line-height nếu không cần */
+  line-height: 50px; /* Bỏ line-height nếu không cần */
 }
 
 .carousel-control-next-icon::before {
   content: "→";
-  line-height: normal; /* Bỏ line-height nếu không cần */
+  line-height: 50px; /* Bỏ line-height nếu không cần */
 }
 
 .cute-btn {
