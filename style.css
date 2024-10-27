@@ -394,15 +394,17 @@ img {
   font-size: 24px;
   color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  line-height: 50px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
+  box-sizing: border-box; /* Đảm bảo tính toán đúng kích thước */
 }
 
 .carousel-control-prev-icon::before {
   content: "←";
+  line-height: normal; /* Bỏ line-height nếu không cần */
 }
 
 .carousel-control-next-icon::before {
   content: "→";
+  line-height: normal; /* Bỏ line-height nếu không cần */
 }
 
 .cute-btn {
