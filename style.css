@@ -399,13 +399,13 @@ img {
 }
 
 .carousel-control-prev-icon::before {
-  content: "←";
-  line-height: 50px; /* Bỏ line-height nếu không cần */
+  content: "<-";
+  height: 50px;
 }
 
 .carousel-control-next-icon::before {
-  content: "→";
-  line-height: 50px; /* Bỏ line-height nếu không cần */
+  content: "->";
+  height: 50px; 
 }
 
 .cute-btn {
