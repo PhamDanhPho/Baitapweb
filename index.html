@@ -16,48 +16,41 @@
 
 </head>
 <body>
-  <script>
-    $(document).ready(function(){
-        $('.toggle').click(function(){
-            $('.navigation ul').slideToggle();
-            $('.navigation ul').toggleClass('open');
-        })
-    })
-    $(window).resize(function() {
-        if ($(window).width() > 800) { 
-            $('.navigation ul').removeClass('open').show(); 
-        } else {
-            $('.navigation ul').removeClass('open').hide();
-        }
-    });
-</script>
-<header>
-    <nav>
-        <div class="logo">
-            <img src="img/images.png" alt="">
-            <h3>Hủ Tiếu Thái Lan</h3>
-            <div class="toggle">
-                <i class="fa-solid fa-bars"></i>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/images.png" alt="Logo">
+                <h3>Hủ Tiếu Thái Lan</h3>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">TRANG CHỦ</a></li>
+                    <li><a href="#">SẢN PHẨM</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><button>ĐẶT MÓN</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-banner">
+            <h5>HỦ TIẾU THÁI LAN</h5>
+            <h1>PI THAI</h1>
+            <h6>Đậm Đà Chuẩn Thái</h6>
+            <button>ĐẶT MÓN</button>
         </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="#">TRANG CHỦ</a></li>
-                <li><a href="#">SẢN PHẨM</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">GIỚI THIỆU</a></li>
-                <button>ĐẶT MÓN</button>
-            </ul>
-        </div>
-        
-    </nav>
-    <div class="header-banner">
-        <h5>HỦ TIẾU THÁI LAN</h5>
-        <h1>PI THAI</h1>
-        <h6>Đậm Đà Chuẩn Thái</h6>
-        <button>ĐẶT MÓN</button>
-    </div>
-</header>
+    </header>
+
+    <script>
+        $(document).ready(function () {
+            $('.toggle').click(function (e) {
+                e.preventDefault();
+                $('.navigation ul').toggleClass('active');
+            });
+        });
+    </script>
 <main>
     <div class="container">
         <h1>Sản phẩm bán chạy</h1>
@@ -66,53 +59,27 @@
                 <div class="product-item">
                     <img src="img/hu_tieu_bo.webp" alt="Sản phẩm 1">
                     <h2>Hủ Tiếu Bò</h2>
-                    <p>Giá: 100.000 VNĐ</p>
+                    <p>Giá: 69.000 VNĐ</p>
                     <button>Mua ngay</button>
                 </div>
                 <div class="product-item">
                     <img src="img/hu_tieu_heo.jpg" alt="Sản phẩm 2">
                     <h2>Hủ Tiếu Heo</h2>
-                    <p>Giá: 200.000 VNĐ</p>
+                    <p>Giá: 55.000 VNĐ</p>
                     <button>Mua ngay</button>
                 </div>
                 <div class="product-item">
                     <img src="img/hu_tieu_pi_thai_dac_biet.jpg" alt="Sản phẩm 3">
                     <h2>Hủ Tiếu Pi Thai Đặc Biệt</h2>
-                    <p>Giá: 300.000 VNĐ</p>
+                    <p>Giá: 75.000 VNĐ</p>
                     <button>Mua ngay</button>
                 </div>
                 <div class="product-item">
                     <img src="img/hu_tieu_tomyum.webp" alt="Sản phẩm 4">
                     <h2>Hủ Tiếu Tomuym</h2>
-                    <p>Giá: 400.000 VNĐ</p>
+                    <p>Giá: 65.000 VNĐ</p>
                     <button>Mua ngay</button>
                 </div>
-                
-                <div class="product-item">
-                    <img src="img/hu_tieu_bo.webp" alt="Sản phẩm 1">
-                    <h2>Hủ Tiếu Bò</h2>
-                    <p>Giá: 100.000 VNĐ</p>
-                    <button>Mua ngay</button>
-                </div>
-                <div class="product-item">
-                    <img src="img/hu_tieu_heo.jpg" alt="Sản phẩm 2">
-                    <h2>Hủ Tiếu Heo</h2>
-                    <p>Giá: 200.000 VNĐ</p>
-                    <button>Mua ngay</button>
-                </div>
-                <div class="product-item">
-                    <img src="img/hu_tieu_pi_thai_dac_biet.jpg" alt="Sản phẩm 3">
-                    <h2>Hủ Tiếu Pi Thai Đặc Biệt</h2>
-                    <p>Giá: 300.000 VNĐ</p>
-                    <button>Mua ngay</button>
-                </div>
-                <div class="product-item">
-                    <img src="img/hu_tieu_tomyum.webp" alt="Sản phẩm 4">
-                    <h2>Hủ Tiếu Tomuym</h2>
-                    <p>Giá: 400.000 VNĐ</p>
-                    <button>Mua ngay</button>
-                </div>
-            </div>
             <button class="product-button left" id="prev">‹</button>
             <button class="product-button right" id="next">›</button>
         </div>
@@ -120,49 +87,49 @@
 </main>
 <script src="script.js"></script>
 <div class="container mt-5">
-  <h2 class="text-center mb-4">NHẬN XÉT CỦA KHÁCH HÀNG</h2>
-  <div id="testimonialCarousel" class="carousel slide">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="testimonial-card">
-                  <img src="./images/images.png" alt="Customer">
-                  <div class="stars">
-                      &#9733; &#9733; &#9733; &#9733; &#9733;
-                  </div>
-                  <div class="name">Nguyễn Đình Vũ</div>
-                  <p>Món ăn ở đây thật sự tuyệt vời! Hương vị đậm đà và trang trí rất đẹp mắt. Tôi sẽ quay lại để thử thêm món khác!</p>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="testimonial-card">
-                  <img src="./images/images-2.png" alt="Customer">
-                  <div class="stars">
-                      &#9733; &#9733; &#9733; &#9733; &#9733;
-                  </div>
-                  <div class="name">Trần Minh Tuấn</div>
-                  <p>Dịch vụ tại nhà hàng rất chuyên nghiệp. Nhân viên phục vụ thân thiện và chu đáo. Một trải nghiệm ẩm thực đáng nhớ!</p>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="testimonial-card">
-                  <img src="./images/images-3.png" alt="Customer">
-                  <div class="stars">
-                      &#9733; &#9733; &#9733; &#9733; &#9734;
-                  </div>
-                  <div class="name">Triệu Thu Trang</div>
-                  <p>Nhà hàng này đã vượt xa mong đợi của tôi! Từ món khai vị đến đồ uống, mọi thứ đều hoàn hảo. Tôi yêu bầu không khí ở đây.</p>
-              </div>
-          </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
-  </div>
+    <h2 class="text-center mb-4">NHẬN XÉT CỦA KHÁCH HÀNG</h2>
+    <div id="testimonialCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonial-card">
+                    <img src="./images/images.png" alt="Customer">
+                    <div class="stars">
+                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </div>
+                    <div class="name">Nguyễn Đình Vũ</div>
+                    <p>Món ăn ở đây thật sự tuyệt vời! Hương vị đậm đà và trang trí rất đẹp mắt. Tôi sẽ quay lại để thử thêm món khác!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-card">
+                    <img src="./images/images-2.png" alt="Customer">
+                    <div class="stars">
+                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </div>
+                    <div class="name">Trần Minh Tuấn</div>
+                    <p>Dịch vụ tại nhà hàng rất chuyên nghiệp. Nhân viên phục vụ thân thiện và chu đáo. Một trải nghiệm ẩm thực đáng nhớ!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-card">
+                    <img src="./images/images-3.png" alt="Customer">
+                    <div class="stars">
+                        &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </div>
+                    <div class="name">Triệu Thu Trang</div>
+                    <p>Nhà hàng này đã vượt xa mong đợi của tôi! Từ món khai vị đến đồ uống, mọi thứ đều hoàn hảo. Tôi yêu bầu không khí ở đây.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
 <script>
   $(document).ready(function(){
