@@ -24,11 +24,10 @@ header nav {
 
 .toggle {
   color: #dc1f1f;
-  text-align: right;
   cursor: pointer;
   font-size: 25px;
   display: none;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .logo {
@@ -38,7 +37,7 @@ header nav {
 
 .logo img {
   width: 80px;
-  margin: 5px 20px 5px 150px;
+  margin: 5px 20px 5px 20px;
 }
 
 .logo h3 {
@@ -48,6 +47,7 @@ header nav {
   font-family: 'Nunito', sans-serif;
   letter-spacing: 0.5px;
   text-shadow: 1px 6px 5px rgba(114, 103, 0, 0.3);
+  letter-spacing: 3px;
 }
 
 .navigation ul {
@@ -70,7 +70,6 @@ header nav {
 
 .navigation a:hover {
   color: #feba27;
-  filter: drop-shadow(2px 2px 10px rgba(242, 228, 25, 0.8));
 }
 
 .navigation button {
@@ -97,8 +96,8 @@ header nav {
       display: none;
   }
   .navigation li{
-    float: left;
-      margin: 15px;
+      float: left;
+      margin: 0 20px;
   }
   .navigation ul.active {
       display: flex;
@@ -124,13 +123,13 @@ header nav {
   }
 
   .navigation ul {
-      flex-direction: column;
+      /* flex-direction: column; */
       text-align: center;
       display: none;
   }
   .navigation li{
       float: left;
-      margin: 5px;
+      margin: 10px;
   }
   .navigation ul.active {
       display: flex;
@@ -144,7 +143,10 @@ header nav {
   .logo img {
       margin: 5px 20px 5px 10px;
   }
-
+  .logo h3{
+      font-size: 35px;
+      letter-spacing: 2px;
+  }
   nav {
       flex-direction: column;
       align-items: flex-start;
@@ -152,7 +154,7 @@ header nav {
 }
 
 .header-banner {
-  background-image: url(img/img_home_main_banner.jpg);
+  background-image: url('img/img_home_main_banner.jpg');
   background-size: cover;
   background-position: center;
   height: 85vh;
@@ -160,8 +162,8 @@ header nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: white;
+  text-align: center;
   position: relative;
   z-index: 1;
 }
@@ -175,7 +177,6 @@ header nav {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.55);
   z-index: -1;
-  width: 100%;
 }
 
 .header-banner h5 {
@@ -210,19 +211,16 @@ header nav {
   margin: 0.5rem;
   transition: background-color 0.3s ease;
 }
-
 .header-banner button:hover {
   background-color: #db7923; 
 }
-
 @media screen and (max-width: 700px) {
   .header-banner h1 {
-      font-size: 2.7rem; 
+      font-size: 2.7rem;
   }
-
   .header-banner h5, .header-banner h6 {
       font-size: 1rem;
-  }
+  }   
 }
 
 main .container {
