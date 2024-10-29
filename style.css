@@ -222,9 +222,10 @@ header nav {
       font-size: 1rem;
   }   
 }
-
+/* Nội dung */
+/* Container styling */
 main .container {
-  background-image: linear-gradient(rgb(243, 242, 180) , rgb(255, 255, 255));
+  background-image: linear-gradient(rgb(243, 242, 180), rgb(255, 255, 255));
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -234,51 +235,73 @@ main .container {
   height: 70vh;
   color: rgb(0, 0, 0);
 }
-main .container h1{
+
+main .container h1 {
   font-size: 40px;
   color: rgb(84, 83, 75);
   filter: drop-shadow(2px 2px 5px yellow);
+  margin-bottom: 20px;
 }
-main .container p{
-  font-size: 17px;
-}
+
+/* Product wrapper */
 .product {
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 
+/* Track styling */
 .product-track {
   display: flex;
   transition: transform 0.5s ease;
+  gap: 10px; /* Adds spacing between items */
 }
 
+/* Product item styling */
 .product-item {
-  min-width: 33.33%; /* Hiện 3 sản phẩm cùng lúc */
+  min-width: 33.33%;
   box-sizing: border-box;
   padding: 10px;
-  
+  text-align: center;
 }
 
+.product-item img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-item h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.product-item p {
+  font-size: 1em;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Button styling */
 .product-item button {
   width: 100px;
   height: 30px;
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  border: 1px solid rgb(255, 132, 0);
-  background-color: rgb(249, 249, 116);
-  box-shadow: 2px 2px 5px rgb(238, 170, 13);
-}
-.product-item button:hover{
-  background-color: rgb(202, 202, 96);
-}
-
-img {
-  width: 250px;
-  height: auto;
-  border-radius: 20px;
+  border: none;
+  background-color: #743a29;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
 
+.product-item button:hover {
+  background-color: #db7923;
+}
+
+/* Carousel navigation buttons */
 .product-button {
   position: absolute;
   top: 50%;
@@ -289,65 +312,78 @@ img {
   cursor: pointer;
   border-radius: 5px;
   z-index: 10;
+  font-size: 18px;
+  color: rgb(14, 14, 14);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .left {
-  left: 0px;
-  color: rgb(14, 14, 14);
+  left: 10px;
   background-color: rgb(255, 200, 0);
 }
 
 .right {
-  right: 0px;
-  color: rgb(14, 14, 14);
+  right: 10px;
   background-color: rgb(255, 200, 0);
 }
-@media only screen and (max-width: 768px) {
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1050px) {
+  main .container {
+    height: 40vh;
+  }
+
   main .container h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
-  
+
   .product-item {
-      min-width: 50%; /* Hiển thị 2 sản phẩm trên màn hình nhỏ */
+    min-width: 50%;
   }
-  
-  img {
-      width: 200px;
+
+  .product-item img {
+    width: 200px;
   }
 
   .product-item button {
-      width: 80px;
-      height: 25px;
-      font-size: 13px;
+    width: 80px;
+    height: 25px;
+    font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
+  main .container {
+    height: 50vh;
+  }
+
   main .container h1 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .product-item {
-      min-width: 100%; /* Hiển thị 1 sản phẩm trên màn hình nhỏ */
+    min-width: 100%; /* Display one product item at a time */
   }
 
-  img {
-      width: 150px;
+  .product-item img {
+    width: 150px;
   }
 
   .product-item button {
-      width: 70px;
-      height: 20px;
-      font-size: 12px;
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
   }
 
   .product-button {
-      padding: 5px;
+    padding: 5px;
   }
 }
+
 .container{
   height: 50vh;
 }
+
 .testimonial-card {
   background-color: #000000;
   color: #ffffff;
@@ -383,27 +419,24 @@ img {
 .carousel-control-next-icon {
   background-color: #f8f9fa;
   border-radius: 50%;
-  border: 2px solid #ffffff;
-  width: 50px;
-  height: 50px;
+  border: 2px solid #9d2f10;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  line-height: 1;
   color: #000000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box; /* Đảm bảo tính toán đúng kích thước */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+  line-height: 30px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
 }
 
 .carousel-control-prev-icon::before {
-  content: "<-";
-  height: 50px;
+  content: "←";
 }
 
 .carousel-control-next-icon::before {
-  content: "->";
-  height: 50px; 
+  content: "→";
 }
 
 .cute-btn {
