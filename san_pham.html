@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Hủ Tiếu Thái Lan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="san_pham.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/images.png" alt="Logo">
+                <h3>Hủ Tiếu Thái Lan</h3>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="san_pham.html">SẢN PHẨM</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="gioi_thieu.html">GIỚI THIỆU</a></li>
+                    <li><button><a href="san_pham.html" style="color: white;">ĐẶT MÓN</a></button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-banner">
+            <h1>SẢN PHẨM</h1>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+            $('.toggle').click(function (e) {
+                e.preventDefault();
+                $('.navigation ul').toggleClass('active');
+            });
+        });
+    </script>
+    <main>
+      <nav class="nav-menu">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="#thailan">HỦ TIẾU THÁI LAN</a></li>
+          <li><a href="#tomyum">HỦ TIẾU TOMYUM</a></li>
+          <li><a href="#ankem">MÓN ĂN KÈM</a></li>
+          <li><a href="#dathem">MÓN ĂN ĐÃ THÈM</a></li>
+          <li><a href="#douong">ĐỒ UỐNG</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <!-- Hủ tiếu thái lan -->
+        <h2 id="thailan">HỦ TIẾU THÁI LAN</h2>
+        <div class="thailan">
+          <div class="mon col-3 col-s-6">
+            <img src="./img/hu_tieu_bo.webp" alt="hu_tieu_bo" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU BÒ</h3>
+            <h4>
+              Hủ Tiếu Bò nhà Pi Thai có 100% nước dùng từ xương heo (không có mì
+              chính), khách có thể...
+            </h4>
+            <span class="gia">69.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img
+              src="./img/hu_tieu_cha_heo_thao_moc.webp"
+              alt="hu_tieu_cha_heo_thao_moc"
+            />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU CHẢ HEO</h3>
+            <h4>
+              100% nước dùng từ xương heo (không mì chính), có nước trong và nước
+              huyết đục đậm vị mà khách...
+            </h4>
+            <span class="gia">45.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/hu_tieu_heo.webp" alt="hu_tieu_heo" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU HEO</h3>
+            <h4>
+              100% nước dùng từ xương heo (không mì chính), có nước trong và nước
+              huyết đục đậm vị mà khách...
+            </h4>
+            <span class="gia">55.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img
+              src="./img/hu_tieu_pi_thai_dac_biet.webp"
+              alt="hu_tieu_pi_thai_dac_biet"
+            />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU ĐẶC BIỆT</h3>
+            <h4>
+              100% nước dùng từ xương heo (không mì chính) có nạm bò, bắp bò, diềm
+              heo, thăn heo, Moodaeng Thái,...
+            </h4>
+            <span class="gia">75.000 VNĐ</span>
+          </div>
+        </div>
+  
+        <!-- Hủ tiếu tomyum -->
+        <h2 id="tomyum">HỦ TIẾU TOMYUM</h2>
+        <div class="tomyum">
+          <div class="mon col-3 col-s-6">
+            <img src="./img/hu_tieu_tomyum.webp" alt="hu_tieu_tomyum" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU TOMYUM</h3>
+            <h4>
+              Nước dùng Toyum chua cay, có thăn, diềm, gan từ heo, thịt heo bằm,
+              1/2 trứng gà luộc, hoành thánh chiên, mọc ăn kèm với giá và rau
+              muống.
+            </h4>
+            <span class="gia">65.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img
+              src="./img/hu_tieu_tomyum_dac_biet.webp"
+              alt="hu_tieu_tomyum_dac_biet"
+            />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU TOMYUM ĐẶC BIỆT</h3>
+            <h4>
+              Có tôm, mực, cá, thịt heo bằm, chả cá, moodaeng Thái và trứng onsen.
+            </h4>
+            <span class="gia">105.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img
+              src="./img/hu_tieu_tomyum_hai_san.webp"
+              alt="hu_tieu_tomyum_hai_san"
+            />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU TOMYUM HẢI SẢN</h3>
+            <h4>
+              Gồm có tôm, thịt heo bằm, trứng cùng vị chua ngon từ nước dùng
+              Tomyum đặc trưng.
+            </h4>
+            <span class="gia">95.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/hu_tieu_tomyum_tom.webp" alt="hu_tieu_tomym_tom" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>HỦ TIẾU TOMYUM TÔM</h3>
+            <h4>
+              Đủ vị chua cay mặn ngọt bảo phủ lên sợi hủ tiếu dai dai và tôm ngon
+              ngọt.
+            </h4>
+            <span class="gia">75.000 VNĐ</span>
+          </div>
+        </div>
+  
+        <!-- Món ăn kèm -->
+        <h2 id="ankem">MÓN ĂN KÈM</h2>
+        <div class="ankem">
+          <div class="mon col-3 col-s-6">
+            <img src="./img/chan_ga_mam_thai.jpg" alt="chan_ga_mam_thai" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>CHÂN GÀ MẮM THÁI</h3>
+            <h4>
+              Chân gà mắm Thái với vị chua, ngọt và giòn ngon siêu lôi cuốn.
+            </h4>
+            <span class="gia">29.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img
+              src="./img/da_heo_chien_gion_cham_mam_ca_thai.webp"
+              alt="da_heo_chien_gion_cham_mam_ca_thai"
+            />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>DA HEO CHIÊN GIÒN CHẤM MẮM CÀ THÁI</h3>
+            <h4>Da heo giòn rụm chấm mắm cà Thái chuẩn vị, cay cay đậm đà.</h4>
+            <span class="gia">29.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img
+              src="./img/trung_chien_sot_me_que.webp"
+              alt="trung_chien_sot_me_que"
+            />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>TRỨNG CHIÊN SỐT ME QUẾ</h3>
+            <h4>
+              Trứng chiên lớp ngoài giòn, vàng cùng phần lòng đỏ tan chảy bên
+              trong, đẫm nước sốt chua chua, cay cay hấp dẫn.
+            </h4>
+            <span class="gia">15.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img
+              src="./img/xuong_xi_quach_nam_som.jpg"
+              alt="xuong_xi_quach_nam_som"
+            />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>XƯƠNG XÍ QUÁCH NÁM SÔM</h3>
+            <h4>
+              Xương ống có tuỷ béo ngậy và phần thịt dai săn. Không có sợi hủ tiếu
+              đi kèm, khách muốn ăn có thể mua thêm sợi.
+            </h4>
+            <span class="gia">29.000 VNĐ</span>
+          </div>
+        </div>
+  
+        <!-- Món thêm đã thèm -->
+        <h2 id="dathem">MÓN ĂN ĐÃ THÈM</h2>
+        <div class="dathem">
+          <div class="mon col-3 col-s-6">
+            <img src="./img/trung_ga_luoc.webp" alt="trung_ga_luoc" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>TRỨNG GÀ LUỘC</h3>
+            <h4>
+              Trứng gà được luộc, sau đó chần qua đá để tạo ra trứng lòng đào ăn
+              kèm với Hủ Tiếu đúng chuẩn bài.
+            </h4>
+            <span class="gia">9.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/cha_heo_thao_moc.webp" alt="cha_heo_thao_moc" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>CHẢ HEO THẢO MỘC</h3>
+            <h4>
+              Chả heo thảo mộc làm từ các gia vị như thăn heo, ... Ăn cùng với Hủ
+              Tiếu Pi Thai tạo nên một hương vị đậm đà.
+            </h4>
+            <span class="gia">19.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/diem_heo.webp" alt="diem_heo" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>DIỀM HEO</h3>
+            <h4>
+              Diềm heo thêm 20g có độ săn, ngon ngọt ăn cùng Hủ Tiếu Pi Thai để đã
+              cơn thèm.
+            </h4>
+            <span class="gia">12.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/nam_bo.webp" alt="nam_bo" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>NẠM BÒ</h3>
+            <h4>
+              Nạm bò 30g có thịt mềm, thấm hương vị đậm đà và đặc trưng của nước
+              dùng Hủ Tiếu Pi Thai.
+            </h4>
+            <span class="gia">24.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/phan_hai_san_them.webp" alt="phan_hai_san_them" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>PHẦN HẢI SẢN THÊM</h3>
+            <h4>
+              Phần Hải Sản Thêm đầy đặn, ăn cùng Hủ Tiếu Pi Thai thì chuẩn bài.
+            </h4>
+            <span class="gia">25.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/phan_thit_them.webp" alt="phan_thit_them" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>PHẦN THỊT THÊM</h3>
+            <h4>Phần Thịt Thêm ăn cùng Hủ Tiếu Pi Thai để đã cơn thèm.</h4>
+            <span class="gia">25.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/soi_hu_tieu_dai.webp" alt="soi_hu_tieu_dai" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>SỢI HỦ TIẾU DÀI</h3>
+            <h4>Sợi hủ tiếu thêm, khách có thể chọn thêm để ăn đã thèm.</h4>
+            <span class="gia">12.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/than_heo.jpg" alt="than_heo" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>THĂN HEO</h3>
+            <h4>
+              Thêm thăn heo 20g là phần thịt ngon có độ giòn và mềm, ăn với Hủ
+              Tiếu Pi Thai tạo nên một trải nghiệm độc đáo.
+            </h4>
+            <span class="gia">12.000 VNĐ</span>
+          </div>
+        </div>
+  
+        <!-- Đồ uống -->
+        <h2 id="douong">ĐỒ UỐNG</h2>
+        <div class="douong">
+          <div class="mon col-3 col-s-6">
+            <img src="./img/coca_cola.jpg" alt="coca_cola" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>COCACOLA</h3>
+            <h4>
+              Giải tỏa cơn khát với chai Coca Cola nhỏ gọn 390ml, tiện lợi dễ dàng
+              bảo quản khi không sử dụng hết.
+            </h4>
+            <span class="gia">20.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/dasani.webp" alt="dasani" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>DASANI WATER</h3>
+            <h4>
+              Chai Dasani Water 500ml, bạn có thể sử dụng uống liền và ngon hơn
+              khi uống lạnh.
+            </h4>
+            <span class="gia">15.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/nuoc_mat_thai_lan.jpg" alt="nuoc_mat_thai_lan" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>NƯỚC MÁT THÁI LAN</h3>
+            <h4>Nước Mát Thái Lan vị thanh mát, giải khát tốt.</h4>
+            <span class="gia">15.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/sprite.webp" alt="sprite" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>SPRITE</h3>
+            <h4>
+              Hương chanh thơm mát từ nước giải khát có gas Sprite 390ml sẽ làm
+              bạn giải tỏa cơn khát tức thì.
+            </h4>
+            <span class="gia">20.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/tra_chanh_thai_do.jpg" alt="tra_chanh_thai_do" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>TRÀ CHANH THÁI ĐỎ</h3>
+            <h4>
+              Trà Chanh Thái Đỏ chua chua ngọt ngọt, thơm thơm vị trà, giải khát
+              cực đã.
+            </h4>
+            <span class="gia">25.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/tra_chanh_thai_xanh.jpg" alt="tra_chanh_thai_xanh" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>TRÀ CHANH THÁI XANH</h3>
+            <h4>
+              Trà Chanh Thái Xanh với hương vị chua ngọt, là món đồ uống giúp giải
+              nhiệt tốt.
+            </h4>
+            <span class="gia">25.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/tra_sua_thai_do.jpg" alt="tra_sua_thai_do" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>TRÀ SỮA THÁI ĐỎ</h3>
+            <h4>
+              Trà có vị ngọt, thơm béo cùng màu sắc đẹp cực thích hợp nhâm nhi khi
+              ăn cùng Hủ Tiếu Pi Thai.
+            </h4>
+            <span class="gia">25.000 VNĐ</span>
+          </div>
+          <div class="mon col-3 col-s-6">
+            <img src="./img/tra_sua_thai_xanh.jpg" alt="tra_sua_thai_xanh" />
+            <span class="sao">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <h3>TRÀ SỮA THÁI XANH</h3>
+            <h4>
+              Trà có vị ngọt, thơm béo cùng màu sắc đẹp cực thích hợp nhâm nhi khi
+              ăn cùng Hủ Tiếu Pi Thai.
+            </h4>
+            <span class="gia">25.000 VNĐ</span>
+          </div>
+        </div>
+      </div>
+      <button id="hiengiohang"><i class="fa fa-shopping-cart"></i></button>
+      <div class="giohang" id="giohang" style="display:none">
+        <div class="your">Giỏ  hàng của bạn</div>
+        <div id="cart"></div>
+        <div id="total"></div>
+        <button id="thanhtoan">Thanh toán</button>
+      </div>
+      <div id="notification" class="notification"></div>
+      <!-- js -->
+      <script src="san_pham.js"></script>
+    </main>
+    <footer>
+        <span class="footer-title">Hủ Tiếu Thái Lan</span>
+        <ul class="footer-socials">
+            <li><a href="#"><img src="img/tiktok.png" class="footer-icon"></a></li>
+            <li><a href="#"><img src="img/fb.png" class="footer-icon"></a></li>
+            <li><a href="#"><img src="img/ig.jpg" class="footer-icon"></a></li>
+        </ul>
+        <div class="footer-contact">
+            <div class="footer-left">
+                <img src="img/download.jpg" alt="logo">
+                <p>Cung cấp sản phẩm với chất <br>lượng an toàn cho quý khách</p>
+            </div>
+            <div class="footer-main">
+                <h2>Nội Dung</h2>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h1>Liên Hệ</h1>
+                <input type="text" placeholder="Địa chỉ email"> <br>
+                <button>Nhắn tin</button>
+            </div>
+        </div>
+        <div class="end">
+            <p>Copyright © 2024 Hủ tiếu Thái Lan Pi Thai. Powered by Thai Market.</p>
+        </div>
+    </footer>
+</body>
+</html>
