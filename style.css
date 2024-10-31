@@ -441,6 +441,15 @@ main .container h1 {
   line-height: 30px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
 }
 
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Căn giữa nội dung theo chiều ngang */
+  height: 100%; /* Căn giữa nội dung theo chiều dọc */
+}
+
 .carousel-control-prev-icon::before {
   content: "<-";
   width: 22px;
