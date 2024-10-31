@@ -443,10 +443,14 @@ main .container h1 {
 
 .carousel-control-prev-icon::before {
   content: "←";
+  width: 22px;
+  height: 50px;
 }
 
 .carousel-control-next-icon::before {
   content: "→";
+  width: 22px;
+  height: 50px;
 }
 
 .cute-btn {
