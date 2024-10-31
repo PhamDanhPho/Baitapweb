@@ -265,6 +265,7 @@ function displayOrder() {
 }
   else if(discountCodeInput!==""){
     invaliddiscount.innerHTML="Mã giảm giá không hợp lệ!";
+    invaliddiscount.style.color="red";
   }
 
   // Cập nhật phí giảm giá
