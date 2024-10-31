@@ -259,9 +259,10 @@ function displayOrder() {
   if (validdiscont){
     discountAmount = total * validdiscont.discount;
   }
-  if(validdiscont && check!=1){
-    alert("Áp dụng mã giảm giá thành công!");
-  }
+  if(validdiscont && check!=1) {
+    invaliddiscount.innerHTML = "Mã giảm giá hợp lệ!";
+    invaliddiscount.style.color = "green";
+}
   else if(discountCodeInput!==""){
     invaliddiscount.innerHTML="Mã giảm giá không hợp lệ!";
   }
