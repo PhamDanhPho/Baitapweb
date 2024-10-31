@@ -105,7 +105,7 @@ function validform(event) {
   if (notCheck(frmin4.thanhtoan)) {
     document.getElementById("ck_thanhtoan").innerHTML =
       "Vui lòng chọn phương thức thanh toán!";
-    frmin4.thanhtoan.focus();
+    document.getElementById("exampleRadios1").focus();
     return;
   } else {
     document.getElementById("ck_thanhtoan").innerHTML = "";
@@ -114,8 +114,7 @@ function validform(event) {
   if (!frmin4.tick.checked) {
     document.getElementById("ck_tick").innerHTML =
       "Vui lòng tick chọn để có thể đặt hàng!";
-
-    frmin4.tick.focus();
+    document.getElementById("invalidCheck3").focus();
     return;
   } else {
     document.getElementById("ck_tick").innerHTML = "";
@@ -245,6 +244,7 @@ function displayOrder() {
     {code: "PHOBUOIBUOI", discount:0.5},
     {code: "SONBUABUA", discount:0.5},
     {code: "DATDANGCAP", discount:1},
+    {code: "EMANHPHO", discount:0.1},
   ];
 
   // Tính phí giảm giá
@@ -256,9 +256,11 @@ function displayOrder() {
     (discount) => discount.code===discountCodeInput
   );
 
-  if (validdiscont && check!=1) {
+  if (validdiscont){
     discountAmount = total * validdiscont.discount;
-    alert("Áp dụng mã giảm giá thành công")
+  }
+  if(validdiscont && check!=1){
+    alert("Áp dụng mã giảm giá thành công!");
   }
   else if(discountCodeInput!==""){
     invaliddiscount.innerHTML="Mã giảm giá không hợp lệ!";
