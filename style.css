@@ -443,11 +443,13 @@ main .container h1 {
 
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
+  content: "";
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%; /* Căn giữa nội dung theo chiều ngang */
-  height: 100%; /* Căn giữa nội dung theo chiều dọc */
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #9d2f10;
 }
 
 .carousel-control-prev-icon::before {
