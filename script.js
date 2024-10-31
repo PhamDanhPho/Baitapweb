@@ -3,56 +3,40 @@ const items = Array.from(track.children);
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
-const visibleItems = 3; // Number of items visible at a time
-const itemWidth = items[0].getBoundingClientRect().width; // Width of each product item
+let currentIndex = 0; // Vị trí hiện tại
+const totalItems = items.length; // Tổng số sản phẩm
+const visibleItems = 3; // Số sản phẩm hiển thị cùng một lúc
 
-// Clone the first few items to make the carousel appear endless
-for (let i = 0; i < visibleItems; i++) {
-    const clone = items[i].cloneNode(true);
-    track.appendChild(clone);
-}
-
-let currentIndex = 0;
-
-// Update the carousel position
+// Cập nhật băng chuyền
 function updateCarousel() {
-    const offset = -currentIndex * itemWidth;
-    track.style.transition = 'transform 0.5s ease';
-    track.style.transform = `translateX(${offset}px)`;
+    const itemWidth = items[0].getBoundingClientRect().width; // Kích thước của sản phẩm
+    const offset = -currentIndex * (itemWidth / visibleItems); // Tính toán khoảng cách dịch chuyển
+    track.style.transform = `translateX(${offset}px)`; // Áp dụng dịch chuyển
 }
 
-// Move to the next set of items
-function next() {
-    currentIndex++;
-    updateCarousel();
-
-    // Check if we’ve reached the cloned items and reset position for a smooth loop
-    if (currentIndex >= items.length) {
-        setTimeout(() => {
-            track.style.transition = 'none';
-            currentIndex = 0; // Reset to the first item
-            updateCarousel();
-        }, 500); // Match the transition duration
+// Nhấn nút "tiếp theo"
+nextButton.addEventListener('click', () => {
+    currentIndex += visibleItems; // Tăng chỉ số hiện tại
+    if (currentIndex >= totalItems) {
+        currentIndex = 0; // Quay lại sản phẩm đầu tiên
     }
-}
+    updateCarousel(); // Cập nhật vị trí
+});
 
-// Move to the previous set of items
-function prev() {
-    if (currentIndex === 0) {
-        currentIndex = items.length; // Jump to the cloned items at the end for smooth loop
-        track.style.transition = 'none';
-        updateCarousel();
+// Nhấn nút "trước"
+prevButton.addEventListener('click', () => {
+    currentIndex -= visibleItems; // Giảm chỉ số hiện tại
+    if (currentIndex < 0) {
+        currentIndex = totalItems - visibleItems; // Nếu nhỏ hơn 0, quay lại sản phẩm cuối cùng
     }
-    setTimeout(() => {
-        track.style.transition = 'transform 0.5s ease';
-        currentIndex--;
-        updateCarousel();
-    }, 20); // Small delay to ensure seamless transition
-}
+    updateCarousel(); // Cập nhật vị trí
+});
 
-// Event listeners for buttons
-nextButton.addEventListener('click', next);
-prevButton.addEventListener('click', prev);
-
-// Automatic scrolling every 5 seconds
-setInterval(next, 5000);
+// Tự động chuyển đổi mỗi 5 giây
+setInterval(() => {
+    currentIndex += visibleItems; // Tăng chỉ số hiện tại
+    if (currentIndex >= totalItems) {
+        currentIndex = 0; // Quay lại sản phẩm đầu tiên
+    }
+    updateCarousel(); // Cập nhật vị trí
+}, 3000);
