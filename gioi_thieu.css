@@ -125,13 +125,18 @@ header nav {
     background-color: #743a29;
   color: white;
   border: none;
-  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s;
   margin-left: 20px;
 }
+
+.navigation .datmon{
+    display: block;
+    color: white;
+    padding: 10px 15px;
+  }
 
 .navigation button:hover {
     background-color: #db7923;
