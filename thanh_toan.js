@@ -105,7 +105,7 @@ function validform(event) {
   if (notCheck(frmin4.thanhtoan)) {
     document.getElementById("ck_thanhtoan").innerHTML =
       "Vui lòng chọn phương thức thanh toán!";
-    frmin4.thanhtoan.focus();
+    document.getElementById("exampleRadios1").focus();
     return;
   } else {
     document.getElementById("ck_thanhtoan").innerHTML = "";
@@ -114,8 +114,7 @@ function validform(event) {
   if (!frmin4.tick.checked) {
     document.getElementById("ck_tick").innerHTML =
       "Vui lòng tick chọn để có thể đặt hàng!";
-
-    frmin4.tick.focus();
+    document.getElementById("invalidCheck3").focus();
     return;
   } else {
     document.getElementById("ck_tick").innerHTML = "";
