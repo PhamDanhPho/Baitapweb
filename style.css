@@ -498,8 +498,7 @@ main .container h1 {
   }
 
   .cute-btn {
-    width: 40px;
-    height: 40px;
+    display: none;
   }
 }
 
