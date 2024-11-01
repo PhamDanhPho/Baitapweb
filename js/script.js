@@ -17,7 +17,7 @@ function updateCarousel() {
 // Nhấn nút "tiếp theo"
 nextButton.addEventListener('click', () => {
     currentIndex += visibleItems; // Tăng chỉ số hiện tại
-    if (currentIndex >= totalItems+8) {
+    if (currentIndex >= totalItems+10) {
         currentIndex = 0; // Quay lại sản phẩm đầu tiên
     }
     updateCarousel(); // Cập nhật vị trí
@@ -27,7 +27,7 @@ nextButton.addEventListener('click', () => {
 prevButton.addEventListener('click', () => {
     currentIndex -= visibleItems; // Giảm chỉ số hiện tại
     if (currentIndex < 0) {
-        currentIndex = totalItems + visibleItems+1; // Nếu nhỏ hơn 0, quay lại sản phẩm cuối cùng
+        currentIndex = totalItems + visibleItems+4; // Nếu nhỏ hơn 0, quay lại sản phẩm cuối cùng
     }
     updateCarousel(); // Cập nhật vị trí
 });
@@ -35,7 +35,7 @@ prevButton.addEventListener('click', () => {
 // Tự động chuyển đổi mỗi 4 giây
 setInterval(() => {
     currentIndex += visibleItems; // Tăng chỉ số hiện tại
-    if (currentIndex >= totalItems+8) {
+    if (currentIndex >= totalItems+10) {
         currentIndex = 0; // Quay lại sản phẩm đầu tiên
     }
     updateCarousel(); // Cập nhật vị trí
