@@ -104,7 +104,7 @@ header nav {
 .banner {
     width: 100%;
     height: 500px; /* Chiều cao mong muốn cho banner */
-    background-image: url(/images/background.jpg);
+    background-image: url("../images/background.jpg");
     background-size: cover; /* Đảm bảo ảnh bao phủ khu vực */
     background-position: center; /* Điều chỉnh phần hiển thị của ảnh */
     padding: 15px;
