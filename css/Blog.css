@@ -27,9 +27,9 @@ header nav {
     color: #dc1f1f;
     text-align: right;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 25px;
     display: none;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .logo {
@@ -39,16 +39,16 @@ header nav {
 
 .logo img {
     width: 80px;
-    margin: 5px 20px 5px 150px;
+    margin: 5px 20px 5px 20px;
 }
 
 .logo h3 {
-    font-size: 25px;
+    font-size: 30px;
     color: #e7dd18;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
-    letter-spacing: 0.5px;
     text-shadow: 1px 6px 5px rgba(114, 103, 0, 0.3);
+    letter-spacing: 3px;
 }
 
 .navigation ul {
@@ -64,7 +64,7 @@ header nav {
 .navigation a {
     text-decoration: none;
     color: #333;
-    font-weight: 400;
+    font-weight: 90;
     font-size: 15px;
     transition: color 0.3s;
 }
@@ -78,13 +78,19 @@ header nav {
     background-color: #743a29;
     color: white;
     border: none;
-    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s;
     margin-left: 20px;
 }
+
+
+.navigation .datmon{
+    display: block;
+    color: white;
+    padding: 10px 15px;
+  }
 
 .navigation button:hover {
     background-color: #db7923;
@@ -98,7 +104,7 @@ header nav {
 .banner {
     width: 100%;
     height: 500px; /* Chiều cao mong muốn cho banner */
-    background-image: url(/Baitapweb/images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-size: cover; /* Đảm bảo ảnh bao phủ khu vực */
     background-position: center; /* Điều chỉnh phần hiển thị của ảnh */
     padding: 15px;
@@ -142,26 +148,6 @@ header nav {
 
 .breadcrumb span {
     color: #666; /* Màu tối cho văn bản không phải liên kết */
-}
-  
-.title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #000000;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.title::after {
-    content: "";
-    width: 100px;
-    height: 3px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
   
 .news-grid {
@@ -210,12 +196,9 @@ header nav {
 /* Responsive */
 @media (max-width: 768px) {
     .news-grid {
-      grid-template-columns: 1fr; /* Stack items */
-      grid-template-rows: auto; /* Adjust rows automatically */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
     }
-}
 
-@media (max-width: 480px) {
     .logo img {
         width: 60px; /* Thu nhỏ logo */
     }
@@ -238,106 +221,83 @@ header nav {
         margin: 10px;
     }
 }
-
+/* Responsive layout for news grid */
 @media (max-width: 600px) {
     .news-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* Stack items */
+        grid-template-rows: auto; /* Adjust rows automatically */
     }
 }
 
-@media screen and (max-width: 800px) {
-    .toggle {
-        display: block;
-    }
-    .navigation ul {
-        flex-direction: column;
-        text-align: center;
-        display: none;
-    }
-    .navigation li{
-        float: left;
-        margin: 10px;
-    }
-    .navigation ul.active {
-        display: flex;
-    }
-    .navigation button{
-        width: 70px;
-        height: 40px;
-        font-size: 10px;
-    }
-    .logo img {
-        margin: 5px 20px 5px 10px;
-    }
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+/* Adjustments for smaller screens */
 
+
+/* Adjustments for mobile navigation */
 @media screen and (max-width: 1000px) {
-    .toggle {
-      display: block;
-    }
-    .navigation ul {
-        display: none;
-    }
-    .navigation li{
-        float: left;
-        margin: 0 20px;
-    }
-    .navigation ul.active {
-        display: flex;
-    }
-    .navigation button{
-        width: 70px;
-        height: 40px;
-        font-size: 10px;
-    }
-    .logo img {
-        margin: 5px 20px 5px 10px;
-    }
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .toggle {
+    display: block;
+  }
+  .navigation ul {
+      display: none;
+  }
+  .navigation li{
+      float: left;
+      margin: 0 20px;
+  }
+  .navigation ul.active {
+      display: flex;
+  }
+  .navigation button{
+      width: 70px;
+      height: auto;
+      font-size: 10px;
+  }
+  .logo img {
+      margin: 5px 20px 5px 10px;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 }
-  
+
 @media screen and (max-width: 800px) {
-    .toggle {
-        display: block;
-    }
-  
-    .navigation ul {
-        /* flex-direction: column; */
-        text-align: center;
-        display: none;
-    }
-    .navigation li{
-        float: left;
-        margin: 10px;
-    }
-    .navigation ul.active {
-        display: flex;
-    }
-    .navigation button{
-        width: 70px;
-        height: 40px;
-        font-size: 10px;
-        display: none;
-    }
-    .logo img {
-        margin: 5px 20px 5px 10px;
-    }
-    .logo h3{
-        font-size: 35px;
-        letter-spacing: 2px;
-    }
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .toggle {
+      display: block;
+  }
+
+  .navigation ul {
+      /* flex-direction: column; */
+      text-align: center;
+      display: none;
+  }
+  .navigation li{
+      float: left;
+      margin: 10px;
+  }
+  .navigation ul.active {
+      display: flex;
+  }
+  .navigation button{
+      width: 70px;
+      height: 40px;
+      font-size: 10px;
+      display: none;
+  }
+  .logo img {
+      margin: 5px 20px 5px 10px;
+  }
+  .logo h3{
+      font-size: 35px;
+      letter-spacing: 2px;
+  }
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 }
+
   
 /* Footer */
 footer {
