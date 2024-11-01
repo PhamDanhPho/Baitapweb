@@ -109,7 +109,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/Baitapweb/img/anh_nen.webp);
+  background-image: url(/img/anh_nen.webp);
   background-size: cover;
   background-position: center;
   opacity: 0.8;
@@ -266,7 +266,7 @@ header nav {
 }
 
 .header-banner{
-    background-image: url(/baitaplon/img/img_home_main_banner.jpg);
+    background-image: url(/img/img_home_main_banner.jpg);
     background-size: cover;
     background-position: center;
     height: 25vh;
