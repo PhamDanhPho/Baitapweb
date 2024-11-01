@@ -441,10 +441,11 @@ main .container h1 {
 
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
+  content: "";
   align-items: center;
   justify-content: center;
   display: inline-block;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 500;
   color: #ff3700;
 }
@@ -468,7 +469,7 @@ main .container h1 {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  line-height: 50px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
+  line-height: 50px; 
 }
 
 .cute-btn:hover {
