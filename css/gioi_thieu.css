@@ -21,7 +21,7 @@ body {
     align-items: center;
     text-align: center;
     color: white;
-    background-image: url(/images/background.jpg); /* Đặt đường dẫn ảnh nền */
+    background-image: url("../images/background.jpg"); /* Đặt đường dẫn ảnh nền */
     background-size: cover;
     background-position: center;
     height: 400px; /* Điều chỉnh chiều cao theo kích thước ảnh */
