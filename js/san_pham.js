@@ -146,3 +146,61 @@ document.getElementById("thanhtoan").addEventListener("click", function () {
       window.location.href = "thanh_toan.html"; // Điều hướng sang trang thanh toán
     }
   });
+
+function updateCart() {
+  const cartDiv = document.getElementById("cart");
+  cartDiv.innerHTML = ""; // Xóa nội dung cũ
+  let total = 0;
+  let totalItems = 0; // Biến để đếm tổng số sản phẩm
+
+  cart.forEach((item) => {
+    const itemDiv = document.createElement("div");
+    itemDiv.innerHTML = `
+            ${item.name} - ${item.price.toLocaleString()} VNĐ x 
+            <button class="decrease" data-name="${item.name}">-</button>
+            <span>${item.quantity}</span>
+            <button class="increase" data-name="${item.name}">+</button>
+            <button class="remove" data-name="${
+              item.name
+            }"><i class="fas fa-trash"></i></button>
+        `;
+    cartDiv.appendChild(itemDiv);
+
+    total += item.price * item.quantity;
+    totalItems += item.quantity; // Cộng số lượng sản phẩm vào biến tổng
+  });
+
+  document.getElementById(
+    "total"
+  ).innerText = `Tổng: ${total.toLocaleString()} VNĐ`;
+
+  const cartCount = document.getElementById("cart-count");
+  if (totalItems > 0) {
+    cartCount.innerText = totalItems; // Cập nhật số lượng sản phẩm
+    cartCount.style.display = "flex"; // Hiển thị khi có sản phẩm
+  } else {
+    cartCount.style.display = "none"; // Ẩn khi không có sản phẩm
+  }
+
+  // Thêm sự kiện cho các nút tăng giảm
+  document.querySelectorAll(".increase").forEach((button) => {
+    button.addEventListener("click", () => {
+      const name = button.getAttribute("data-name");
+      changeQuantity(name, 1);
+    });
+  });
+
+  document.querySelectorAll(".decrease").forEach((button) => {
+    button.addEventListener("click", () => {
+      const name = button.getAttribute("data-name");
+      changeQuantity(name, -1);
+    });
+  });
+
+  document.querySelectorAll(".remove").forEach((button) => {
+    button.addEventListener("click", () => {
+      const name = button.getAttribute("data-name");
+      removeFromCart(name);
+    });
+  });
+}
