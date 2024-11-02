@@ -103,12 +103,12 @@ header nav {
 
 .banner {
     width: 100%;
-    height: 400px; /* Chiều cao mong muốn cho banner */
+    height: 400px;
     background-image: url("../images/background.jpg");
-    background-size: cover; /* Đảm bảo ảnh bao phủ khu vực */
-    background-position: center; /* Điều chỉnh phần hiển thị của ảnh */
+    background-size: cover;
+    background-position: center;
     padding: 15px;
-    filter: brightness(0.95); /* Tối tối ưu ảnh nền để chữ nổi bật hơn */
+    filter: brightness(0.95); 
 }
 
 .banner h1 {
@@ -116,12 +116,12 @@ header nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5rem; /* Điều chỉnh kích thước chữ nếu cần */
+    font-size: 5rem; 
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #8ad3ec;
     font-weight: 500; 
-    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.496); /* Tăng kích thước bóng và độ mờ */
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.496);
 }
 
 /* Phần bổ sung cho các bài viết và chi tiết bài viết */
@@ -133,7 +133,7 @@ header nav {
     padding: 8px 16px;
     background-color: #f0f0f0;
     border-radius: 5px;
-    width: fit-content;     /* Đảm bảo chiều rộng vừa đủ cho nội dung */
+    width: fit-content;    
 }
 
 .breadcrumb a {
@@ -143,17 +143,17 @@ header nav {
 }
 
 .breadcrumb a:hover {
-    color: #005bb5; /* Đổi màu khi hover */
+    color: #005bb5; 
 }
 
 .breadcrumb span {
-    color: #666; /* Màu tối cho văn bản không phải liên kết */
+    color: #666;
 }
   
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    grid-template-rows: repeat(2, auto); /* Two rows */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
     gap: 20px;
     padding: 20px;
 }
@@ -166,8 +166,8 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;      /* Góc bo tròn cho khung */
-    padding: 10px;            /* Khoảng cách giữa viền và nội dung bên trong */
+    flex-direction: column;    
+    padding: 10px;           
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
   
@@ -196,11 +196,11 @@ header nav {
 /* Responsive */
 @media (max-width: 768px) {
     .news-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .logo img {
-        width: 60px; /* Thu nhỏ logo */
+        width: 60px; 
     }
 
     .logo h3 {
@@ -212,7 +212,7 @@ header nav {
     }
 
     .banner h1 {
-        font-size: 5rem; /* Giảm kích thước tiêu đề banner */
+        font-size: 5rem; 
     }
 
     .breadcrumb,
@@ -221,18 +221,14 @@ header nav {
         margin: 10px;
     }
 }
-/* Responsive layout for news grid */
+
 @media (max-width: 600px) {
     .news-grid {
-        grid-template-columns: 1fr; /* Stack items */
-        grid-template-rows: auto; /* Adjust rows automatically */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
     }
 }
 
-/* Adjustments for smaller screens */
-
-
-/* Adjustments for mobile navigation */
 @media screen and (max-width: 1000px) {
   .toggle {
     display: block;
@@ -351,7 +347,7 @@ footer {
 .footer-left, .footer-main, .footer-right {
     flex: 1;
     padding: 0 20px;
-    min-width: 200px; /* Đảm bảo tính tương thích trên mobile */
+    min-width: 200px; 
 }
 
 .footer-left img {
