@@ -580,7 +580,7 @@ header nav {
     font-size: 40px;
   }
   .giohang{
-    background-color: rgba(239, 239, 17, 0.74);
+    background-color: rgba(239, 239, 17, 0.938);
     position: fixed; /* Đặt vị trí cố định */
     bottom: 105px;    /* Khoảng cách từ dưới lên (70px để giỏ hàng nằm trên nút) */
     right: 20px;     /* Khoảng cách từ bên phải 20px */
@@ -626,7 +626,7 @@ header nav {
   .your{
     font-size: 25px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: red;
   }
   
   #cart button{
