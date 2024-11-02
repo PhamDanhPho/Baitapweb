@@ -28,7 +28,7 @@ body {
 }
 
 .intro-section h1 {
-    font-size: 3rem; /* Điều chỉnh kích thước chữ nếu cần */
+    font-size: 5rem; /* Điều chỉnh kích thước chữ nếu cần */
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #8ad3ec;
