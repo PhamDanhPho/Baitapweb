@@ -235,7 +235,6 @@ header nav {
   }
 
   .navigation ul {
-      /* flex-direction: column; */
       text-align: center;
       display: none;
   }
@@ -545,48 +544,48 @@ header nav {
   }
   
   #notification {
-    position: fixed; /* Đặt vị trí cố định */
-    top: 100px; /* Cách từ trên xuống */
-    left: 50%; /* Đặt ở giữa */
-    transform: translateX(-50%); /* Canh giữa */
-    background-color: rgba(0, 128, 0, 0.8); /* Màu nền xanh lá với độ mờ */
-    color: white; /* Màu chữ trắng */
-    padding: 15px; /* Khoảng cách bên trong */
-    border-radius: 5px; /* Bo góc */
-    display: none; /* Ẩn thông báo mặc định */
-    opacity: 0; /* Đặt độ mờ mặc định */
-    transition: opacity 0.5s; /* Hiệu ứng chuyển đổi cho độ mờ */
+    position: fixed;
+    top: 100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 128, 0, 0.8); 
+    color: white; 
+    padding: 15px;
+    border-radius: 5px; 
+    display: none; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
     z-index: 1;
   }
   
   
   #hiengiohang{
-    position: fixed; /* Đặt vị trí cố định */
-    bottom: 20px; /* Cách từ dưới lên */
-    right: 30px; /* Cách từ bên phải */
-    width: 80px; /* Chiều rộng */
-    height: 80px; /* Chiều cao */
-    border-radius: 50%; /* Biến thành hình tròn */
-    background-image: linear-gradient(orange,yellow); /* Màu nền */
-    color: black; /* Màu chữ */
-    border: none; /* Không có đường viền */
-    font-size: 20px; /* Kích thước chữ */
-    cursor: pointer; /* Con trỏ khi hover */
-    display: flex; /* Flexbox cho căn giữa */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    width: 80px;
+    height: 80px; 
+    border-radius: 50%;
+    background-image: linear-gradient(orange,yellow); 
+    color: black; 
+    border: none; 
+    font-size: 20px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 0.3s;
     z-index: 1;
     font-size: 40px;
   }
   .giohang{
     background-color: rgba(239, 239, 17, 0.938);
-    position: fixed; /* Đặt vị trí cố định */
-    bottom: 105px;    /* Khoảng cách từ dưới lên (70px để giỏ hàng nằm trên nút) */
-    right: 20px;     /* Khoảng cách từ bên phải 20px */
-    border: 1px solid #ccc; /* Đường viền */
-    padding: 10px; /* Khoảng cách bên trong */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng */
+    position: fixed; 
+    bottom: 105px;   
+    right: 20px;     
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     border: none;
     border-radius: 5px;
     z-index: 1;
@@ -595,12 +594,12 @@ header nav {
   #cart{
     margin: 10px;
     border-radius: 5px;
-    background-color: white; /* Màu nền giỏ hàng */
+    background-color: white;
     overflow-y: auto;
     height: 150px;
     max-height: 100%;
-    scrollbar-width: thin; /* Chiều rộng thanh cuộn */
-    scrollbar-color: #888 #f1f1f1; /* Màu thanh cuộn và màu track */
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
   }
   #cart div{
     padding: 5px;
@@ -691,7 +690,7 @@ header nav {
 .footer-left,.footer-main,.footer-right{
   flex: 1;
   padding: 0 20px;
-  min-width: 200px; /* Ensures better mobile responsiveness */
+  min-width: 200px; 
 }
 .footer-left img{
   width: 80px;
