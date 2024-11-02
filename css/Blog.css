@@ -103,7 +103,7 @@ header nav {
 
 .banner {
     width: 100%;
-    height: 500px; /* Chiều cao mong muốn cho banner */
+    height: 400px; /* Chiều cao mong muốn cho banner */
     background-image: url("../images/background.jpg");
     background-size: cover; /* Đảm bảo ảnh bao phủ khu vực */
     background-position: center; /* Điều chỉnh phần hiển thị của ảnh */
@@ -212,7 +212,7 @@ header nav {
     }
 
     .banner h1 {
-        font-size: 2em; /* Giảm kích thước tiêu đề banner */
+        font-size: 5rem; /* Giảm kích thước tiêu đề banner */
     }
 
     .breadcrumb,
