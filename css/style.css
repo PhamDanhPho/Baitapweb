@@ -129,7 +129,6 @@ header nav {
   }
 
   .navigation ul {
-      /* flex-direction: column; */
       text-align: center;
       display: none;
   }
@@ -234,7 +233,6 @@ header nav {
   }   
 }
 /* Nội dung */
-/* Container styling */
 main .container {
   background-image: linear-gradient(rgb(243, 242, 180), rgb(255, 255, 255));
   max-width: 100%;
@@ -255,7 +253,6 @@ main .container h1 {
   margin-bottom: 20px;
 }
 
-/* Product wrapper */
 .product {
   position: relative;
   overflow: hidden;
@@ -313,7 +310,6 @@ main .container h1 {
   background-color: #db7923;
 }
 
-/* Carousel navigation buttons */
 .product-button {
   position: absolute;
   top: 50%;
@@ -374,7 +370,7 @@ main .container h1 {
   }
 
   .product-item {
-    min-width: 100%; /* Display one product item at a time */
+    min-width: 100%; 
   }
 
   .product-item img {
@@ -422,7 +418,7 @@ main .container h1 {
 }
 
 .testimonial-card .stars {
-  color: #ffc107; /* Gold star color */
+  color: #ffc107; 
   margin-bottom: 10px;
   font-size: 24px;
 }
@@ -470,7 +466,7 @@ main .container h1 {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  line-height: 50px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
+  line-height: 50px; 
 }
 
 .cute-btn:hover {
@@ -560,7 +556,7 @@ footer {
 .footer-left, .footer-main, .footer-right {
   flex: 1;
   padding: 0 20px;
-  min-width: 200px; /* Ensures better mobile responsiveness */
+  min-width: 200px; 
 }
 
 .footer-left img {
